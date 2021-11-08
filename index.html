@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <title>Speed Racer</title>
-    <!-- Lib -->
-    <script src="./lib/p5.min.js"></script>
-    <script src="./lib/p5.dom.min.js"></script>
-    <script src="./lib/p5.sound.min.js"></script>
-    <script src="./lib/p5.play.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    
+    <script src="p5.play.js"></script>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyBcFqa6tQMZcZawa37LTmZEYVuAce9PQoM",
+  authDomain: "air-balloon-ride-38c31.firebaseapp.com",
+  databaseURL: "https://air-balloon-ride-38c31-default-rtdb.firebaseio.com",
+  projectId: "air-balloon-ride-38c31",
+  storageBucket: "air-balloon-ride-38c31.appspot.com",
+  messagingSenderId: "937563011878",
+  appId: "1:937563011878:web:7e4c0cbb23e07b31db5fe7"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
 
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyAQ5VMAHEv55FmMG7Cvne5TFVoHzjem7iw",
-        authDomain: "multiplayergame-f6cbe.firebaseapp.com",
-        databaseURL: "https://multiplayergame-f6cbe.firebaseio.com",
-        projectId: "multiplayergame-f6cbe",
-        storageBucket: "multiplayergame-f6cbe.appspot.com",
-        messagingSenderId: "488741733610",
-        appId: "1:488741733610:web:9495da95518039d3"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
   </head>
   <body>
-    <script src="./js/Game.js"></script>
-    <script src="./js/Form.js"></script>
-    <script src="./js/Player.js"></script>
-    <script src="./sketch.js"></script>
-  </body>
+      <script src="sketch.js"></script>
+    </body>
 </html>
